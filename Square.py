@@ -6,4 +6,4 @@ class Square:
         self.Type = type
     
     def __str__(self):
-        return f"[ {self.Type} ]"
+        return f"{self.Pos} [ {self.Type} ]"
