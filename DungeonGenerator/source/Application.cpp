@@ -15,6 +15,8 @@ void Application::Run() {
     Vec2 diff = vec1 - vec2;
     Vec2 scaled = vec1 * 2.0f;
     Vec2 divided = vec1 / 2.0f;
+    Vec2 cloned = vec1.Clone();
+    float magnitude = vec1.GetMag();
     std::print("Vector 1: ");
     vec1.Print();
     std::print("\nVector 2: ");
@@ -27,4 +29,7 @@ void Application::Run() {
     scaled.Print();
     std::print("\nDivided Vector 1: ");
     divided.Print();
+    std::print("\nCloned Vector 1: ");
+    cloned.Print();
+    std::print("\nMagnitude of Vector 1: {}\n", magnitude);
 }
